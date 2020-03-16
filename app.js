@@ -24,6 +24,6 @@ app.get('/interview', function (req, res) {
 
 var aasa = fs.readFileSync(__dirname + '/apple-app-site-association');
 app.get('/apple-app-site-association', function(req, res, next) {
-     res.set('Content-Type', 'application/json');
+     res.set('Content-Type', 'application/pkcs7-mime');
      res.status(200).send(aasa);
 });
