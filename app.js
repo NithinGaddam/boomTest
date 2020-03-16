@@ -8,3 +8,7 @@ app.get('/', function (req, res){
 app.listen(port, function (){
 	console.log(`Example app listening on port !`);
 });
+//
+app.get('/interview', function (req, res) {
+    res.json([{"Brand":"Alfa Romeo","Model":"GTV"},{"Brand":"Porsche","Model":"718"}]);
+});
